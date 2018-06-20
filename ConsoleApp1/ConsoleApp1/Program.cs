@@ -22,7 +22,7 @@ namespace ConsoleApp1
             t1.Add("d");
             t2.Add("e");
 
-            var a = 0;
+            Console.WriteLine(string.Join(",",t2));
         }
     }
 }

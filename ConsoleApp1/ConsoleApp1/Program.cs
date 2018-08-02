@@ -10,11 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            IList<string> abc = new List<string>
+            var abc = new List<string>
             {
-                "a",
-                "b",
-                "c"
+                "a", "b", "c"
             };
             var t1 = abc.ToList();
             var t2 = abc as List<string>;
@@ -22,7 +20,7 @@ namespace ConsoleApp1
             t1.Add("d");
             t2.Add("e");
 
-            Console.WriteLine(string.Join(",",t2));
+            Console.WriteLine(string.Join(",", t2));
         }
     }
 }
